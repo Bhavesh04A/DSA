@@ -1,11 +1,19 @@
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <set>
+#include <tuple>
+#include <algorithm>
+
+using namespace std;
+
 class Solution {
-  public:
+public:
     vector<int> topKSumPairs(vector<int>& a, vector<int>& b, int k) {
         int n = a.size();
         sort(a.begin(), a.end());
         sort(b.begin(), b.end());
 
- 
         priority_queue<tuple<int, int, int>> pq;
         set<pair<int, int>> visited;
 
@@ -36,6 +44,23 @@ class Solution {
         }
 
         return result;
-        
     }
 };
+
+
+int main() {
+    Solution sol;
+    vector<int> a = {1, 4, 2, 3};
+    vector<int> b = {2, 5, 1, 6};
+    int k = 5;
+
+    vector<int> result = sol.topKSumPairs(a, b, k);
+
+    cout << "Top " << k << " sum pairs are: ";
+    for (int val : result) {
+        cout << val << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
