@@ -22,25 +22,6 @@ This is a personal project where I'm practicing and mastering DSA concepts using
 
 ---
 
-
----
-
-## ✅ Topics Covered
-
-- [x] Arrays
-- [x] Strings
-- [x] Linked Lists
-- [x] Stacks & Queues
-- [x] Trees & Binary Trees
-- [x] Graphs (BFS, DFS, etc.)
-- [x] Recursion & Backtracking
-- [ ] Dynamic Programming
-- [ ] Tries
-- [ ] Segment Trees
-- [ ] Greedy Algorithms
-
----
-
 ## 📝 Problem Sources
 
 - [LeetCode](https://leetcode.com/)
